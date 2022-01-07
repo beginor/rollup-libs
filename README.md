@@ -1,1 +1,3 @@
-# Rollup starter project with TypeScript!
+# Rollup libs
+
+Rollup common used libs to es6 module.
