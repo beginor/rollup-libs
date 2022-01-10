@@ -1,2 +1,2 @@
 #!/bin/bash -e
-pnpm exec rollup -c rollup/rollup.popperjs.js
+pnpm exec rollup -c rollup/popperjs.rollup.js
