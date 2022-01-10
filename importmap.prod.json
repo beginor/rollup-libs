@@ -24,6 +24,7 @@
     "echarts": "http://81.71.93.249/dist/libs/echarts/echarts.js",
     "moment": "http://81.71.93.249/dist/libs/moment/moment.js",
     "moment/locale/": "http://81.71.93.249/dist/libs/moment/locale/",
+    "zone.js": "http://81.71.93.249/dist/libs/zone.js/zone.min.js",
     "@angular/core": "http://81.71.93.249/dist/libs/@angular/core/core.min.js",
     "@angular/compiler": "http://81.71.93.249/dist/libs/@angular/compiler/compiler.min.js",
     "@angular/common": "http://81.71.93.249/dist/libs/@angular/common/common.min.js",
