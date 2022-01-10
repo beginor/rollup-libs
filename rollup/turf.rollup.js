@@ -16,7 +16,7 @@ const tmp = {
 }
 /** @type { import('rollup').RollupOptions } */
 const turf = {
-  input: 'rollup/truf.js',
+  input: 'rollup/turf.js',
   output: {
     format: 'esm',
     sourcemap: false,
