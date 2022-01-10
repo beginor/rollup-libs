@@ -1,28 +1,36 @@
 import commonjs from '@rollup/plugin-commonjs';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import esbuild from 'rollup-plugin-esbuild';
 
-export default [
-  {
-    input: 'node_modules/mapbox-gl/dist/mapbox-gl-unminified.js',
-    output: {
-      format: 'esm',
-      // exports: 'named',
-      sourcemap: false,
-      file: 'dist/libs/mapbox-gl/mapbox-gl.js'
-    },
-    plugins: [
-      commonjs({})
-    ]
+/** @type { import('rollup').RollupOptions } */
+const dev = {
+  input: 'rollup/mapbox-gl.dev.js',
+  output: {
+    format: 'esm',
+    // exports: 'auto',
+    sourcemap: false,
+    file: 'dist/libs/mapbox-gl/mapbox-gl.js'
   },
-  {
-    input: 'node_modules/mapbox-gl/dist/mapbox-gl.js',
-    output: {
-      format: 'esm',
-      exports: 'named',
-      // sourcemap: false,
-      file: 'dist/libs/mapbox-gl/mapbox-gl.min.js'
-    },
-    plugins: [
-      commonjs({})
-    ]
-  }
-]
+  plugins: [
+    nodeResolve(),
+    commonjs()
+  ]
+};
+
+/** @type { import('rollup').RollupOptions } */
+const prod = {
+  input: 'rollup/mapbox-gl.prod.js',
+  output: {
+    format: 'esm',
+    // exports: 'auto',
+    sourcemap: false,
+    file: 'dist/libs/mapbox-gl/mapbox-gl.min.js'
+  },
+  plugins: [
+    nodeResolve(),
+    commonjs(),
+    esbuild({ minify: true, legalComments: 'none' })
+  ]
+};
+
+export default [dev, prod];
