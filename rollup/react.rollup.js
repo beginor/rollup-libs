@@ -100,7 +100,7 @@ export default [
     ]
   },
   {
-    input: './rollup/react.development.js',
+    input: './rollup/react.dev.js',
     output: {
       format: 'esm',
       exports: 'named',
@@ -120,7 +120,7 @@ export default [
     ]
   },
   {
-    input: './rollup/react.production.js',
+    input: './rollup/react.prod.js',
     output: {
       format: 'esm',
       exports: 'named',
@@ -140,7 +140,7 @@ export default [
     ]
   },
   {
-    input: './rollup/react-jsx-runtime.development.js',
+    input: './rollup/react-jsx-runtime.dev.js',
     output: {
       format: 'esm',
       exports: 'named',
@@ -160,7 +160,7 @@ export default [
     ]
   },
   {
-    input: './rollup/react-jsx-runtime.production.js',
+    input: './rollup/react-jsx-runtime.prod.js',
     output: {
       format: 'esm',
       exports: 'named',
@@ -180,7 +180,7 @@ export default [
     ]
   },
   {
-    input: './rollup/react-dom.development.js',
+    input: './rollup/react-dom.dev.js',
     output: {
       format: 'esm',
       exports: 'named',
@@ -200,7 +200,7 @@ export default [
     ]
   },
   {
-    input: './rollup/react-dom.production.js',
+    input: './rollup/react-dom.prod.js',
     output: {
       format: 'esm',
       exports: 'named',
