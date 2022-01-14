@@ -1,2 +1,2 @@
 #!/bin/bash -e
-pnpm exec rollup -c rollup/react-bootstrap.rollup.js
+pnpm exec rollup -c scripts/react-bootstrap.rollup.js
