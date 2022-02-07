@@ -4,7 +4,7 @@ import esbuild from 'rollup-plugin-esbuild';
 
 /** @type { import('rollup').RollupOptions } */
 const dev = {
-  input: 'rollup/mapbox-gl.dev.js',
+  input: 'scripts/mapbox-gl.dev.js',
   output: {
     format: 'esm',
     // exports: 'auto',
@@ -19,7 +19,7 @@ const dev = {
 
 /** @type { import('rollup').RollupOptions } */
 const prod = {
-  input: 'rollup/mapbox-gl.prod.js',
+  input: 'scripts/mapbox-gl.prod.js',
   output: {
     format: 'esm',
     // exports: 'auto',
