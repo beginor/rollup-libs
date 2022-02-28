@@ -5,7 +5,7 @@ import esbuild from 'rollup-plugin-esbuild';
 
 /** @type {import('rollup').RollupOptions} */
 const dev = {
-  input: './rollup/react-router-dom.js',
+  input: './scripts/react-router-dom.js',
   output: {
     format: 'esm',
     exports: 'named',
@@ -26,7 +26,7 @@ const dev = {
 };
 /** @type {import('rollup').RollupOptions} */
 const prod = {
-  input: './rollup/react-router-dom.js',
+  input: './scripts/react-router-dom.js',
   output: {
     format: 'esm',
     exports: 'named',
