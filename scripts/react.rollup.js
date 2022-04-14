@@ -60,46 +60,6 @@ export default [
     ]
   },
   {
-    input: 'node_modules/scheduler/cjs/scheduler-tracing.development.js',
-    output: {
-      format: 'esm',
-      exports: 'named',
-      sourcemap: false,
-      file: 'dist/libs/react/scheduler-tracing.js'
-    },
-    external: [],
-    plugins: [
-      nodeResolve(),
-      commonjs(),
-      replace({
-        preventAssignment: false,
-        values: {
-          "process.env.NODE_ENV": '"development"'
-        }
-      })
-    ]
-  },
-  {
-    input: 'node_modules/scheduler/cjs/scheduler-tracing.production.min.js',
-    output: {
-      format: 'esm',
-      exports: 'named',
-      sourcemap: false,
-      file: 'dist/libs/react/scheduler-tracing.min.js'
-    },
-    external: [],
-    plugins: [
-      nodeResolve(),
-      commonjs(),
-      replace({
-        preventAssignment: false,
-        values: {
-          "process.env.NODE_ENV": '"production"'
-        }
-      })
-    ]
-  },
-  {
     input: './scripts/react.dev.js',
     output: {
       format: 'esm',
@@ -177,85 +137,6 @@ export default [
           "process.env.NODE_ENV": '"production"'
         }
       })
-    ]
-  },
-  {
-    input: './scripts/react-dom.dev.js',
-    output: {
-      format: 'esm',
-      exports: 'named',
-      sourcemap: false,
-      file: 'dist/libs/react/react-dom.js'
-    },
-    external: ['react', 'react-is', 'object-assign', 'scheduler', 'scheduler/tracing'],
-    plugins: [
-      nodeResolve(),
-      commonjs(),
-      replace({
-        preventAssignment: true,
-        values: {
-          "process.env.NODE_ENV": '"development"'
-        }
-      })
-    ]
-  },
-  {
-    input: './scripts/react-dom.prod.js',
-    output: {
-      format: 'esm',
-      exports: 'named',
-      sourcemap: false,
-      file: 'dist/libs/react/react-dom.min.js'
-    },
-    external: ['react', 'react-is', 'object-assign', 'scheduler', 'scheduler/tracing'],
-    plugins: [
-      nodeResolve(),
-      commonjs(),
-      replace({
-        preventAssignment: true,
-        values: {
-          "process.env.NODE_ENV": '"production"'
-        }
-      })
-    ]
-  },
-  {
-    input: 'node_modules/react-dom/client.js',
-    output: {
-      format: 'esm',
-      exports: 'named',
-      sourcemap: false,
-      file: 'dist/libs/react/react-dom_client.js'
-    },
-    external: ['react-dom'],
-    plugins: [
-      commonjs(),
-      replace({
-        preventAssignment: false,
-        values: {
-          "process.env.NODE_ENV": '"development"'
-        }
-      })
-    ]
-  },
-  {
-    input: 'node_modules/react-dom/client.js',
-    output: {
-      format: 'esm',
-      exports: 'named',
-      sourcemap: false,
-      file: 'dist/libs/react/react-dom_client.min.js'
-    },
-    external: ['react-dom'],
-    plugins: [
-      commonjs(),
-      replace({
-        preventAssignment: false,
-        values: {
-          "process.env.NODE_ENV": '"production"'
-        }
-      }),
-      esbuild({ minify: true, legalComments: 'none' })
     ]
   },
   {

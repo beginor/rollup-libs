@@ -10,7 +10,7 @@ const dev = {
     format: 'esm',
     exports: 'named',
     sourcemap: false,
-    file: 'dist/libs/react/react-router-dom.js'
+    file: 'dist/libs/react-router-dom/react-router-dom.js'
   },
   external: ['react', 'react-is', 'object-assign', 'scheduler', 'scheduler/tracing'],
   plugins: [
@@ -31,7 +31,7 @@ const prod = {
     format: 'esm',
     exports: 'named',
     sourcemap: false,
-    file: 'dist/libs/react/react-router-dom.min.js'
+    file: 'dist/libs/react-router-dom/react-router-dom.min.js'
   },
   external: ['react', 'react-is', 'object-assign', 'scheduler', 'scheduler/tracing'],
   plugins: [
