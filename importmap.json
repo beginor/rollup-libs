@@ -40,6 +40,7 @@
     "@angular/localize/init": "http://81.71.93.249/dist/libs/@angular/localize/init.js",
     "@angular/common/locales/zh-Hans": "http://81.71.93.249/dist/libs/@angular/common/locales/zh-Hans.js",
     "@angular/common/locales/extra/zh-Hans": "http://81.71.93.249/dist/libs/@angular/common/locales/extra/zh-Hans.js",
-    "@ng-bootstrap/ng-bootstrap": "http://81.71.93.249/dist/libs/@ng-bootstrap/ng-bootstrap.js"
+    "@ng-bootstrap/ng-bootstrap": "http://81.71.93.249/dist/libs/@ng-bootstrap/ng-bootstrap.js",
+    "ant-design-vue": "http://81.71.93.249/dist/libs/ant-design-vue/antd.js"
   }
 }
