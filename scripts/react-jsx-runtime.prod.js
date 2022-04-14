@@ -1,4 +1,4 @@
-import JSX from 'react/cjs/react-jsx-runtime.production.min.js';
+import JSX from '../node_modules/react/cjs/react-jsx-runtime.production.min.js';
 export default JSX;
 export const { jsx, jsxs, Fragment } = JSX;
 

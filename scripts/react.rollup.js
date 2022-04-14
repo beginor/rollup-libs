@@ -220,6 +220,45 @@ export default [
     ]
   },
   {
+    input: 'node_modules/react-dom/client.js',
+    output: {
+      format: 'esm',
+      exports: 'named',
+      sourcemap: false,
+      file: 'dist/libs/react/react-dom_client.js'
+    },
+    external: ['react-dom'],
+    plugins: [
+      commonjs(),
+      replace({
+        preventAssignment: false,
+        values: {
+          "process.env.NODE_ENV": '"development"'
+        }
+      })
+    ]
+  },
+  {
+    input: 'node_modules/react-dom/client.js',
+    output: {
+      format: 'esm',
+      exports: 'named',
+      sourcemap: false,
+      file: 'dist/libs/react/react-dom_client.min.js'
+    },
+    external: ['react-dom'],
+    plugins: [
+      commonjs(),
+      replace({
+        preventAssignment: false,
+        values: {
+          "process.env.NODE_ENV": '"production"'
+        }
+      }),
+      esbuild({ minify: true, legalComments: 'none' })
+    ]
+  },
+  {
     input: 'node_modules/react-is/cjs/react-is.development.js',
     output: {
       format: 'esm',

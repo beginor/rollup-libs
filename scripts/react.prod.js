@@ -1,4 +1,4 @@
-import React from "react/cjs/react.production.min.js";
+import React from "../node_modules/react/cjs/react.production.min.js";
 
 export default React;
 export const {

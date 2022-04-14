@@ -1,4 +1,4 @@
-import React from "react/cjs/react.development.js";
+import React from "../node_modules/react/cjs/react.development.js";
 
 export default React;
 export const {

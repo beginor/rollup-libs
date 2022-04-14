@@ -9,6 +9,7 @@
     "react": "http://81.71.93.249/dist/libs/react/react.js",
     "react/jsx-runtime": "http://81.71.93.249/dist/libs/react/react-jsx-runtime.js",
     "react-dom": "http://81.71.93.249/dist/libs/react/react-dom.js",
+    "react-dom/client": "http://81.71.93.249/dist/libs/react/react-dom_client.js",
     "react-router-dom": "http://81.71.93.249/dist/libs/react/react-router-dom.js",
     "react-is": "http://81.71.93.249/dist/libs/react/react-is.js",
     "react-bootstrap": "http://81.71.93.249/dist/libs/react-bootstrap/react-bootstrap.js",
