@@ -43,6 +43,7 @@
     "@angular/common/locales/extra/zh-Hans": "http://81.71.93.249/dist/libs/@angular/common/locales/extra/zh-Hans.js",
     "@ng-bootstrap/ng-bootstrap": "http://81.71.93.249/dist/libs/@ng-bootstrap/ng-bootstrap.min.js",
     "ant-design-vue": "http://81.71.93.249/dist/libs/ant-design-vue/antd.min.js",
-    "antd": "http://81.71.93.249/dist/libs/antd/antd.min.js"
+    "antd": "http://81.71.93.249/dist/libs/antd/antd.min.js",
+    "vant": "http://81.71.93.249/dist/libs/vant/vant.js"
   }
 }
