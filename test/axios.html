@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>axios test</title>
+</head>
+<body>
+  <button type="button" id="testBtn">test</button>
+  <div>
+  <textarea id="result"></textarea>
+</div>
+  <script type="importmap">
+    {
+      "imports": {
+        "axios": "/dist/libs/axios/axios.js"
+      }
+    }
+  </script>
+  <script type="module">
+import axios from 'axios';
+
+document.getElementById('testBtn').addEventListener('click', async () => {
+  const res = await axios.get('/importmap.json');
+  const data = res.data;
+  document.getElementById('result').innerHTML = JSON.stringify(data);
+});
+
+
+  </script>
+</body>
+</html>
