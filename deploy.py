@@ -1,40 +1,32 @@
-#!/bin/bash -e
+#!/opt/homebrew/bin/python3
+from os import system
 
-declare -a dests
-declare -a urls
-
-dests+=("/Users/${USER}/Developer/containers/nginx/html/dist")
-urls+=('http:\/\/localhost\/dist')
-
-dests+=('lighthouse:~/docker/nginx/html/dist')
-urls+=('http:\/\/81.71.93.249\/dist')
-
-dests+=('htaly:/mnt/nginx/html/dist')
-urls+=('http:\/\/112.74.67.213:8080\/dist')
-
-function deploy_to {
-    if [ $# -eq 2 ]; then
-        local target=$1
-        local target_url=$2
-    else
-        echo "deploy_to needs two arguments"
-        exit 1
-    fi
-
-    echo "deploy to $target , target url is: $target_url"
-    # process importmap.json first
-    local original_url="http:\/\/localhost:3000\/dist"
-    cp -f importmap.* dist
-    sed -i.bak "s/${original_url}/${target_url}/g" dist/importmap.json
-    sed -i.bak "s/${original_url}/${target_url}/g" dist/importmap.prod.json
-    rm -f dist/*.bak
-    rsync -rvz dist/importmap.* $target
-    rm -f dist/importmap.*
-    # rsync libs
-    rsync -rz dist/libs $target
-    rsync -rvz loader.js $target
+targets = {
+    '~/Developer/containers/nginx/html/dist': 'http://localhost/dist',
+    'lighthouse:~/docker/nginx/html/dist': 'http://81.71.93.249/dist',
+    'htaly:/mnt/nginx/html/dist': 'http://112.74.67.213:8080/dist'
 }
 
-for i in ${!dests[@]}; do
-    deploy_to ${dests[$i]} ${urls[$i]}
-done
+def copy_to(source: str, target: str):
+    command = 'rsync -rz ' if target.find(':') > 0 else 'cp -rf '
+    command = f'{command} {source} {target}'
+    system(command)
+
+def deploy_to(target: str, target_url: str):
+    print(f'deploy to {target} , target url is {target_url}')
+    #
+    original_url= 'http://localhost:3000/dist'.replace('/', '\/')
+    target_url = target_url.replace('/', '\/')
+    system('cp -f importmap.* dist')
+    # cmd = f'sed -i.bak "s/{original_url}/{target_url}/g" dist/importmap.json';
+    # print(cmd)
+    system(f'sed -i.bak "s/{original_url}/{target_url}/g" dist/importmap.json')
+    system(f'sed -i.bak "s/{original_url}/{target_url}/g" dist/importmap.prod.json')
+    system('rm -f dist/*.bak')
+    copy_to('dist/importmap.*', target)
+    system('rm -f dist/importmap.*')
+    copy_to('dist/libs', target)
+    copy_to('loader.js', target)
+
+for key in targets.keys():
+    deploy_to(key, targets[key])
