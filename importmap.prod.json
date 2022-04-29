@@ -44,6 +44,7 @@
     "@ng-bootstrap/ng-bootstrap": "http://localhost:3000/dist/libs/@ng-bootstrap/ng-bootstrap.min.js",
     "ant-design-vue": "http://localhost:3000/dist/libs/ant-design-vue/antd.min.js",
     "antd": "http://localhost:3000/dist/libs/antd/antd.min.js",
-    "vant": "http://localhost:3000/dist/libs/vant/vant.min.js"
+    "vant": "http://localhost:3000/dist/libs/vant/vant.min.js",
+    "axios": "http://localhost:3000/dist/libs/axios/axios.min.js"
   }
 }
