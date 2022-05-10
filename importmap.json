@@ -45,6 +45,7 @@
     "ant-design-vue": "http://localhost:3000/dist/libs/ant-design-vue/antd.js",
     "antd": "http://localhost:3000/dist/libs/antd/antd.js",
     "vant": "http://localhost:3000/dist/libs/vant/vant.js",
-    "axios": "http://localhost:3000/dist/libs/axios/axios.js"
+    "axios": "http://localhost:3000/dist/libs/axios/axios.js",
+    "ng-zorro": "http://localhost:3000/dist/libs/ng-zorro/ng-zorro.js"
   }
 }
