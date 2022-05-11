@@ -3,12 +3,12 @@ import esbuild from 'rollup-plugin-esbuild';
 
 /** @type { import('rollup').RollupOptions } */
 const dev = {
-  input: './scripts/ng-zorro.js',
+  input: './scripts/ng-zorro-antd.js',
   output: {
     format: 'esm',
     exports: 'named',
     sourcemap: false,
-    file: 'dist/libs/ng-zorro/ng-zorro.js'
+    file: 'dist/libs/ng-zorro-antd/ng-zorro-antd.js'
   },
   external: [
     "@angular/core",
@@ -33,12 +33,12 @@ const dev = {
 
 /** @type { import('rollup').RollupOptions } */
 const prod = {
-  input: './scripts/ng-zorro.js',
+  input: './scripts/ng-zorro-antd.js',
   output: {
     format: 'esm',
     exports: 'named',
     sourcemap: false,
-    file: 'dist/libs/ng-zorro/ng-zorro.min.js'
+    file: 'dist/libs/ng-zorro-antd/ng-zorro-antd.min.js'
   },
   external: [
     "@angular/core",

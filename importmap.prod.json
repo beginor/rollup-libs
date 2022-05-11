@@ -46,6 +46,6 @@
     "antd": "http://localhost:3000/dist/libs/antd/antd.min.js",
     "vant": "http://localhost:3000/dist/libs/vant/vant.min.js",
     "axios": "http://localhost:3000/dist/libs/axios/axios.min.js",
-    "ng-zorro": "http://localhost:3000/dist/libs/ng-zorro/ng-zorro.js"
+    "ng-zorro-antd": "http://localhost:3000/dist/libs/ng-zorro-antd/ng-zorro-antd.min.js"
   }
 }
