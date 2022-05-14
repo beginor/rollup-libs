@@ -23,7 +23,8 @@
   const map = new Map({
     container: 'app',
     accessToken: 'pk.eyJ1IjoiYmVnaW5vciIsImEiOiJja2pmMWNkbXg4azcyMzVwZHFraGc1cjYzIn0.xo0073v7zQfAicAPsr0CHQ',
-    style: 'mapbox://styles/beginor/ckjf6mvge0hhk19p75nt647p5'
+    style: 'mapbox://styles/beginor/ckjf6mvge0hhk19p75nt647p5',
+    projection: 'globe'
   });
   const nav = new NavigationControl({});
   map.addControl(nav, 'top-right');
@@ -40,6 +41,7 @@
     );
     map.setTerrain({ source: 'mapbox-terrain', exaggeration: 1.5 });
   });
+  window.__map = map;
   </script>
 </body>
 </html>
