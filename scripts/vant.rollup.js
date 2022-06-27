@@ -17,7 +17,7 @@ const dev = {
 };
 
 const prod = {
-  input: './node_modules/vant/lib/vant.es.min.js',
+  input: './node_modules/vant/lib/vant.es.js',
   output: {
     format: 'esm',
     exports: 'named',
