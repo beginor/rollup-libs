@@ -37,7 +37,7 @@
     "@angular/platform-browser/animations": "http://localhost:3000/dist/libs/@angular/platform-browser/animations.min.js",
     "@angular/platform-browser-dynamic": "http://localhost:3000/dist/libs/@angular/platform-browser-dynamic/platform-browser-dynamic.min.js",
     "@angular/router": "http://localhost:3000/dist/libs/@angular/router/router.min.js",
-    "@angular/localize": "http://localhost:3000/dist/libs/@angular/localize.min.js",
+    "@angular/localize": "http://localhost:3000/dist/libs/@angular/localize/localize.min.js",
     "@angular/localize/init": "http://localhost:3000/dist/libs/@angular/localize/init.min.js",
     "@angular/common/locales/zh-Hans": "http://localhost:3000/dist/libs/@angular/common/locales/zh-Hans.js",
     "@angular/common/locales/extra/zh-Hans": "http://localhost:3000/dist/libs/@angular/common/locales/extra/zh-Hans.js",
