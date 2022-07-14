@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hooks Demo</title>
+  <link rel="stylesheet" href="../../assets/libraries/bootstrap/bootstrap.min.css">
+</head>
+<body>
+  <h2>React Hooks Demo</h2>
+  <p>
+    <button id="init" class="btn btn-success">Init App</button>
+    <button id="destroy" class="btn btn-danger">Destroy App</button>
+  </p>
+  <div id="app"></div>
+  <script src="../../index.js"></script>
+  <script>
+  loadScripts([
+    { type: 'importmap', src: `../../importmap.${isProd()?'prod.json':'json'}` },
+    { type: 'module', src: `./hooks.js` }
+  ]).catch(ex => console.error(ex));
+  </script>
+</body>
+</html>

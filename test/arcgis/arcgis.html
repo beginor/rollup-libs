@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArcGIS ESM Test</title>
+  <link rel="stylesheet" href="/node_modules/@arcgis/core/assets/esri/css/main.css">
+  <style>
+  html, body { width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;}
+  #viewDiv { width: 100%; height: 100%; }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "@esri/": "/node_modules/@esri/",
+      "@esri/arcgis-html-sanitizer": "/node_modules/@esri/arcgis-html-sanitizer/dist/esm/index.js",
+      "@esri/calcite-colors": "/node_modules/@esri/calcite-colors/dist/colors.modern.js",
+      "@arcgis/": "/node_modules/@arcgis/"
+      "@arcgis/core/Map": "/node_modules/@arcgis/core/Map.js",
+      "@arcgis/core/views/MapView": "/node_modules/@arcgis/core/views/MapView.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="viewDiv"></div> <!-- 1625483275159030135 -->
+  <script src="../../index.js"></script>
+  <script>
+  loadScripts([
+    // { type: 'importmap', src: `../../importmap.${isProd()?'prod.json':'json'}` },
+    { type: 'module', src: `./arcgis.js` }
+  ]).catch(ex => console.error(ex));;
+  </script>
+</body>
+</html>

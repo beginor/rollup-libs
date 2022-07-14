@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React</title>
+  <link rel="stylesheet" href="../../assets/libraries/bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+  <div id="root">
+  </div>
+  <script src="../../index.js"></script>
+  <script>
+  loadScripts([
+    { type: 'importmap', src: `../../importmap.${isProd()?'prod.json':'json'}` },
+    { type: 'module', src: `./react.js` }
+  ]).catch(ex => console.error(ex));
+  </script>
+</body>
+
+</html>
