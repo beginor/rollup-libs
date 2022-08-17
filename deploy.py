@@ -29,7 +29,7 @@ def deploy_to(target: str, target_url: str):
     copy_to('dist/importmap.*', target)
     system('rm -f dist/importmap.*')
     copy_to('dist/libs', target)
-    copy_to('loader.js', target)
+    copy_to('dist/loader.*', target)
 
 for key in targets.keys():
     deploy_to(key, targets[key])

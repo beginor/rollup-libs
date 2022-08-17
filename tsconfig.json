@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "declaration": false,
+    "declaration": true,
     "moduleResolution": "node",
     "target": "ESNext",
     "module": "ESNext",
     "lib": ["DOM", "ESNext"],
-    "strict": true
+    "strict": true,
+    "outDir": "dist"
   },
   "include": [
-    "src/**/*.ts"
+    "src/loader.ts"
   ],
   "exclude": [
     "node_modules",

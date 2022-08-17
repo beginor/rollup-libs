@@ -13,9 +13,10 @@
     "rollup-watch": "pnpm run rollup --watch",
     "sass": "sass styles:dist/styles",
     "sass-watch": "pnpm run sass -w",
-    "dev": "pnpm run clean-app && concurrently \"pnpm run browser-sync\" \"pnpm run rollup-watch\" \"pnpm run sass-watch\"",
+    "dev": "concurrently \"pnpm run tsc --watch\" \"pnpm run browser-sync\"",
     "start": "pnpm run clean && pnpm run dev",
-    "test": "echo test"
+    "test": "echo test",
+    "tsc": "tsc --project tsconfig.json"
   },
   "repository": {
     "type": "git",
