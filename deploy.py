@@ -2,7 +2,7 @@
 from os import system
 
 targets = {
-    '~/Developer/containers/nginx/html/dist': 'http://localhost/dist',
+    '~/Developer/containers/nginx/app/html/dist': 'http://localhost/dist',
     '~/Developer/python/geep/client/dist': 'http://172.32.32.206/geep/web/dist',
     'lighthouse:~/docker/nginx/html/dist': 'http://81.71.93.249/dist',
     'htaly:/mnt/nginx/html/dist': 'http://112.74.67.213:8080/dist',
