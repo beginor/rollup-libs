@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapbox Test</title>
+  <link rel="stylesheet" href="/dist/libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/dist/libs/mapbox-gl/mapbox-gl.css">
+  <style>
+    html, body { width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;}
+    #mapview { width: 100%; height: 100%; }
+    #toolbar { position: absolute; left: 0px; top: 0px;}
+  </style>
+</head>
+<body>
+<div id="mapview"></div>
+<script src="/dist/loader.js"></script>
+<script>
+  loadScripts([
+    { type: 'importmap', src: `/dist/importmap.${isProd()?'prod.json':'json'}` },
+    { type: 'module', src: `./mobile.js` }
+  ]).catch(ex => console.error(ex));
+</script>
+</body>
+</html>
