@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "rollup starter kit",
   "main": "index.html",
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=7.0.0"
+  },
   "scripts": {
     "build": "pnpm run clean && pnpm run rollup && pnpm run sass",
     "build-app": "pnpm run clean-app && pnpm run rollup && pnpm run sass",
@@ -13,10 +17,11 @@
     "rollup-watch": "pnpm run rollup --watch",
     "sass": "sass styles:dist/styles",
     "sass-watch": "pnpm run sass -w",
-    "dev": "concurrently \"pnpm run tsc --watch\" \"pnpm run browser-sync\"",
+    "dev": "pnpm run clean-app && concurrently \"pnpm run browser-sync\" \"pnpm run rollup-watch\" \"pnpm run sass-watch\"",
     "start": "pnpm run clean && pnpm run dev",
     "test": "echo test",
-    "tsc": "tsc --project tsconfig.json"
+    "esbuild": "NODE_ENV=production node esbuild.mjs",
+    "esbuild-watch": "ESBUILD_WATCH=true node esbuild.mjs"
   },
   "repository": {
     "type": "git",
