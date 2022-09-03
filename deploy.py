@@ -11,7 +11,7 @@ targets = {
 }
 
 def copy_to(source: str, target: str):
-    command = 'rsync -rz ' if target.find(':') > 0 else 'cp -rf '
+    command = 'rsync -rzh --stats ' if target.find(':') > 0 else 'cp -rf '
     command = f'{command} {source} {target}'
     system(command)
 
