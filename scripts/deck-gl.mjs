@@ -1,4 +1,4 @@
-import { build } from 'esbuild';
+import { esbuild } from './esbuild-helper.mjs';
 
 /** @type {Array<import('esbuild').BuildOptions>} */
 const options = [
@@ -441,8 +441,6 @@ export default options;
 if (import.meta.url.endsWith(process.argv[1])) {
   // build options
   for (const option of options) {
-    console.log(`${option.entryPoints} > ${option.outfile}`)
-    let re =  await build(option);
-    console.log(JSON.stringify(re, undefined, 2));
+    await esbuild(option);
   }
 }
