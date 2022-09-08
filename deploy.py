@@ -6,8 +6,8 @@ targets = {
     '~/Developer/python/geep/client/dist': 'http://172.32.32.206/geep/web/dist',
     'lighthouse:~/docker/nginx/html/dist': 'http://81.71.93.249/dist',
     'htaly:/mnt/nginx/html/dist': 'http://112.74.67.213:8080/dist',
-    #'agsserver:/mnt/data/docker/nginx/html/arcgis-js-api/dist': 'https://it.gdeei.cn/arcgis-js-api/dist',
-    #'agsportal:/mnt/data/docker/nginx/html/arcgis-js-api/dist': 'https://app.gdeei.cn/arcgis-js-api/dist',
+    'agsdb01:/mnt/data/docker/nginx/it/html/arcgis-js-api/dist': 'https://it.gdeei.cn/arcgis-js-api/dist',
+    'agsdb01:/mnt/data/docker/nginx/app/html/arcgis-js-api/dist': 'https://app.gdeei.cn/arcgis-js-api/dist',
 }
 
 def copy_to(source: str, target: str):
