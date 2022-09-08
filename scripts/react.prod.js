@@ -29,6 +29,7 @@ export const {
   useReducer,
   useRef,
   useState,
+  useId,
   version,
 } = React;
 
