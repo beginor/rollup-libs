@@ -1,4 +1,4 @@
-import { build } from 'esbuild';
+import { esbuild } from './esbuild-helper.mjs';
 
 /** @type {import('esbuild').BuildOptions} */
 const dev = {
@@ -25,11 +25,6 @@ export { dev, prod };
 
 if (import.meta.url.endsWith(process.argv[1])) {
   // build dev
-  console.log(`${dev.entryPoints} > ${dev.outfile}`)
-  let re =  await build(dev);
-  console.log(JSON.stringify(re, undefined, 2));
-  // build prod
-  console.log(`${prod.entryPoints} > ${prod.outfile}`)
-  re = await build(prod);
-  console.log(JSON.stringify(re, undefined, 2));
+  await esbuild(dev);
+  await esbuild(prod);
 }
