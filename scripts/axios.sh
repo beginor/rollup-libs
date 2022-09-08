@@ -1,2 +1,2 @@
 #!/bin/bash -e
-pnpm exec rollup -c scripts/axios.rollup.js
+node scripts/axios.esbuild.mjs
