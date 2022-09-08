@@ -21,7 +21,7 @@ const prod = {
   treeShaking: false,
 };
 
-export { dev, prod }
+export { dev, prod };
 
 if (import.meta.url.endsWith(process.argv[1])) {
   // build dev
