@@ -1,5 +1,6 @@
 import { jsx as _jsx } from "react/jsx-runtime";
 import { Component } from 'react';
+
 import { render } from 'react-dom';
 class App extends Component {
     $props;

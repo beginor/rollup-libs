@@ -1,5 +1,5 @@
 import { Component, ReactNode } from 'react';
-import { render } from 'react-dom';
+import { Root, createRoot } from 'react-dom/client';
 
 class App extends Component<AppProps, AppState> {
 
@@ -30,7 +30,6 @@ interface AppProps { count: number; }
 
 interface AppState { clickCount: number; }
 
-render(
-    <App count={0} />,
-    document.querySelector('#root')
+createRoot(document.querySelector('#root') as HTMLElement).render(
+    <App count={0} />
 );
