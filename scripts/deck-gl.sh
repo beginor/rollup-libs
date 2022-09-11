@@ -1,3 +1,3 @@
 #!/bin/bash
 
-node scripts/deck-gl.mjs
+node scripts/deck-gl.esbuild.mjs
