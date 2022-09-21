@@ -14,6 +14,7 @@
     "react-is": "http://localhost:3000/dist/libs/react/react-is.min.js",
     "react-bootstrap": "http://localhost:3000/dist/libs/react-bootstrap/react-bootstrap.min.js",
     "mapbox-gl": "http://localhost:3000/dist/libs/mapbox-gl/mapbox-gl.min.js",
+    "mapbox-gl/style-spec": "http://localhost:3000/dist/libs/mapbox-gl/style-spec.js",
     "@turf/turf": "http://localhost:3000/dist/libs/@turf/turf/turf.js",
     "rxjs": "http://localhost:3000/dist/libs/rxjs/rxjs.js",
     "rxjs/operators": "http://localhost:3000/dist/libs/rxjs/rxjs.operators.js",
