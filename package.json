@@ -81,8 +81,7 @@
     "@ng-bootstrap/ng-bootstrap": "^13.0.0",
     "vant": "^3.6.2",
     "axios": "^0.27.2",
-    "ng-zorro-antd": "^14.0.0",
-    "es-module-shims": "^1.5.18"
+    "ng-zorro-antd": "^14.0.0"
   },
   "devDependencies": {
     "eslint": "^8.23.0",
