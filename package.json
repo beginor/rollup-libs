@@ -40,8 +40,8 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.2",
-    "@types/bootstrap": "^5.2.5",
-    "bootstrap-icons": "^1.9.1",
+    "@types/bootstrap": "^5.2.6",
+    "bootstrap-icons": "^1.10.2",
     "tslib": "^2.4.1",
     "object-assign": "^4.1.1",
     "scheduler": "^0.23.0",
