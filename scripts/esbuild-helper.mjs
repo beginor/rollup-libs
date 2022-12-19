@@ -5,7 +5,7 @@ const watching = !!process.env.ESBUILD_WATCH;
 
 /**
  * create esbuild options;
- * @param {string[]} input entry points;
+ * @param {string[]} entryPoints entry points;
  * @param {string} output output file or dir (end with /)
  * @returns {import('esbuild').BuildOptions}
  */
@@ -21,11 +21,7 @@ function createOptions(entryPoints, output) {
     legalComments: 'none',
     chunkNames: "chunks/[name]",
     treeShaking: production,
-    external: [
-      'tslib',
-      'bootstrap',
-      '@popperjs/core',
-    ],
+    packages: 'external',
     plugins:[],
   };
   if (output.endsWith('/')) {
