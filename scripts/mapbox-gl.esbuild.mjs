@@ -1,4 +1,4 @@
-import { esbuild } from './esbuild-helper.mjs';
+import { buildOrWatch } from './esbuild-helper.mjs';
 
 /** @type {import('esbuild').BuildOptions} */
 const dev = {
@@ -30,6 +30,6 @@ export { dev, prod };
 
 if (import.meta.url.endsWith(process.argv[1])) {
   // build dev
-  await esbuild(dev);
-  await esbuild(prod);
+  await buildOrWatch(dev);
+  await buildOrWatch(prod);
 }

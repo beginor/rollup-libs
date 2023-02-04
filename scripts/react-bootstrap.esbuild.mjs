@@ -1,4 +1,4 @@
-import { esbuild } from './esbuild-helper.mjs';
+import { buildOrWatch } from './esbuild-helper.mjs';
 
 /** @type {Array<import('esbuild').BuildOptions>} */
 const options = [
@@ -45,6 +45,6 @@ export default options;
 if (import.meta.url.endsWith(process.argv[1])) {
   // build options
   for (const option of options) {
-    await esbuild(option);
+    await buildOrWatch(option);
   }
 }
