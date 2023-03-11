@@ -26,27 +26,7 @@
     "echarts": "http://localhost:3000/dist/libs/echarts/echarts.js",
     "moment": "http://localhost:3000/dist/libs/moment/moment.js",
     "moment/locale/": "http://localhost:3000/dist/libs/moment/locale/",
-    "zone.js": "http://localhost:3000/dist/libs/zone.js/zone.min.js",
-    "@angular/core": "http://localhost:3000/dist/libs/@angular/core/core.min.js",
-    "@angular/compiler": "http://localhost:3000/dist/libs/@angular/compiler/compiler.min.js",
-    "@angular/common": "http://localhost:3000/dist/libs/@angular/common/common.min.js",
-    "@angular/common/http": "http://localhost:3000/dist/libs/@angular/common/http.min.js",
-    "@angular/forms": "http://localhost:3000/dist/libs/@angular/forms/forms.min.js",
-    "@angular/animations": "http://localhost:3000/dist/libs/@angular/animations/animations.min.js",
-    "@angular/animations/browser": "http://localhost:3000/dist/libs/@angular/animations/browser.min.js",
-    "@angular/platform-browser": "http://localhost:3000/dist/libs/@angular/platform-browser/platform-browser.min.js",
-    "@angular/platform-browser/animations": "http://localhost:3000/dist/libs/@angular/platform-browser/animations.min.js",
-    "@angular/platform-browser-dynamic": "http://localhost:3000/dist/libs/@angular/platform-browser-dynamic/platform-browser-dynamic.min.js",
-    "@angular/router": "http://localhost:3000/dist/libs/@angular/router/router.min.js",
-    "@angular/localize": "http://localhost:3000/dist/libs/@angular/localize/localize.min.js",
-    "@angular/localize/init": "http://localhost:3000/dist/libs/@angular/localize/init.min.js",
-    "@angular/common/locales/zh-Hans": "http://localhost:3000/dist/libs/@angular/common/locales/zh-Hans.js",
-    "@angular/common/locales/extra/zh-Hans": "http://localhost:3000/dist/libs/@angular/common/locales/extra/zh-Hans.js",
-    "@ng-bootstrap/ng-bootstrap": "http://localhost:3000/dist/libs/@ng-bootstrap/ng-bootstrap.min.js",
-    "ant-design-vue": "http://localhost:3000/dist/libs/ant-design-vue/antd.min.js",
     "antd": "http://localhost:3000/dist/libs/antd/antd.min.js",
-    "vant": "http://localhost:3000/dist/libs/vant/vant.min.js",
-    "axios": "http://localhost:3000/dist/libs/axios/axios.min.js",
-    "ng-zorro-antd": "http://localhost:3000/dist/libs/ng-zorro-antd/ng-zorro-antd.min.js"
+    "axios": "http://localhost:3000/dist/libs/axios/axios.min.js"
   }
 }
