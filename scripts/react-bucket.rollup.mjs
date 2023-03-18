@@ -3,6 +3,10 @@ import commonjs from '@rollup/plugin-commonjs';
 import replace from "@rollup/plugin-replace";
 import esbuild from 'rollup-plugin-esbuild';
 
+const external = [
+  'react', 'react/jsx-runtime', 'react-dom',
+];
+
 /** @type {import('rollup').RollupOptions} */
 const dev = {
   input: {
@@ -21,6 +25,7 @@ const dev = {
     dir: 'dist/libs/react-bucket',
     chunkFileNames: '[name]-[hash].js',
   },
+  external,
   plugins: [
     nodeResolve(),
     commonjs(),
@@ -50,6 +55,7 @@ const prod = {
     dir: 'dist/libs/react-bucket',
     chunkFileNames: '[name]-[hash].min.js',
   },
+  external,
   plugins: [
     nodeResolve(),
     commonjs(),
