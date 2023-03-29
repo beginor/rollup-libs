@@ -20,9 +20,10 @@
     "rxjs/webSocker": "http://localhost:3000/dist/libs/rxjs/rxjs.webSocker.js",
     "vue": "http://localhost:3000/dist/libs/vue/vue.min.js",
     "vue-router": "http://localhost:3000/dist/libs/vue/vue-router.min.js",
-    "echarts": "http://localhost:3000/dist/libs/echarts/echarts.js",
+    "echarts": "http://localhost:3000/dist/libs/echarts/echarts.min.js",
     "moment": "http://localhost:3000/dist/libs/moment/moment.js",
     "moment/locale/": "http://localhost:3000/dist/libs/moment/locale/",
-    "axios": "http://localhost:3000/dist/libs/axios/axios.min.js"
+    "axios": "http://localhost:3000/dist/libs/axios/axios.min.js",
+    "apexcharts": "http://localhost:3000/dist/libs/apexcharts/apexcharts.min.js"
   }
 }
