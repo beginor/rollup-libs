@@ -25,6 +25,6 @@
     "moment/locale/": "http://localhost:3000/dist/libs/moment/locale/",
     "axios": "http://localhost:3000/dist/libs/axios/axios.min.js",
     "apexcharts": "http://localhost:3000/dist/libs/apexcharts/apexcharts.min.js",
-    "xlsx": "http://localhost:3000/dist/libs/xlsx/xlsx.min.mjs"
+    "xlsx": "http://localhost:3000/dist/libs/xlsx/xlsx.min.js"
   }
 }
