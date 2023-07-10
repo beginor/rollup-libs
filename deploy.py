@@ -5,8 +5,8 @@ targets = {
     '~/Developer/containers/nginx/app/html/dist': 'http://127.0.0.1/dist',
     'lighthouse:~/docker/nginx/html/dist': 'http://81.71.93.249/dist',
     'ubuntu_zhang:~/Docker/nginx/html/dist': 'http://192.168.8.8/dist',
-    'agsdb01:/mnt/data/docker/nginx/it/html/arcgis-js-api/dist': 'https://it.gdeei.cn/arcgis-js-api/dist',
-    'agsdb01:/mnt/data/docker/nginx/app/html/arcgis-js-api/dist': 'https://app.gdeei.cn/arcgis-js-api/dist',
+    # 'agsdb01:/mnt/data/docker/nginx/it/html/arcgis-js-api/dist': 'https://it.gdeei.cn/arcgis-js-api/dist',
+    # 'agsdb01:/mnt/data/docker/nginx/app/html/arcgis-js-api/dist': 'https://app.gdeei.cn/arcgis-js-api/dist',
     # '~/Developer/python/geep/client/dist': 'http://172.32.32.206/geep/web/dist',
 }
 

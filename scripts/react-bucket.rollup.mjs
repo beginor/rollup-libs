@@ -4,7 +4,7 @@ import replace from "@rollup/plugin-replace";
 import esbuild from 'rollup-plugin-esbuild';
 
 const external = [
-  'react', 'react/jsx-runtime', 'react-dom',
+  'react', 'react/jsx-runtime', 'react-dom', 'dayjs',
 ];
 
 /** @type {import('rollup').RollupOptions} */
