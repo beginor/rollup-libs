@@ -69,4 +69,29 @@ const prod = {
   ]
 };
 
-export default [dev, prod];
+const antdLocale = {
+  input: {
+    'zh_CN': './node_modules/antd/es/locale/zh_CN.js',
+    'en_US': './node_modules/antd/es/locale/en_US.js',
+  },
+  output: {
+    format: 'esm',
+    exports: 'named',
+    sourcemap: false,
+    dir: 'dist/libs/react-bucket/antd-locale',
+    chunkFileNames: '[name]-[hash].js',
+  },
+  external,
+  plugins: [
+    nodeResolve(),
+    commonjs(),
+    replace({
+      preventAssignment: false,
+      values: {
+        "process.env.NODE_ENV": '"development"'
+      }
+    }),
+  ],
+};
+
+export default [dev, prod, antdLocale];
