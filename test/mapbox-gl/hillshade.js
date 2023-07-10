@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import mapboxgl from 'mapbox-gl';
-import accessToken from './token.js';
+import accessToken from './token';
 void (async function () {
     const map = new mapboxgl.Map({
         container: 'viewDiv',
@@ -30,4 +30,3 @@ void (async function () {
         }
     }, 'aerialway');
 })();
-//# sourceMappingURL=hillshade.js.map

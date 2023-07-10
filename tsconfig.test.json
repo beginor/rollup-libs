@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "importHelpers": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "sourceMap": false,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./"
+  },
+  "include": [
+    "test/**/*.ts",
+    "test/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

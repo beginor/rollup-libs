@@ -12,4 +12,3 @@ const mapview = new MapView({
     container: 'viewDiv',
     map
 });
-//# sourceMappingURL=arcgis.js.map

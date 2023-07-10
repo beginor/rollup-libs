@@ -2,8 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 
 import { BehaviorSubject, Subject, Subscription } from 'rxjs';
 
-import { state } from 'shared/index';
-
 const subject = new BehaviorSubject<string>('');
 
 export function Example(
@@ -45,7 +43,7 @@ export function useMessage(
     subject: BehaviorSubject<string>
 ) {
     const [message, setMessage] = useState(subject.getValue());
-    
+
     useEffect(() => {
         const msg$ = subject.subscribe(msg => setMessage(msg));
         return () => {

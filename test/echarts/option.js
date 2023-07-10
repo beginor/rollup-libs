@@ -32,4 +32,3 @@ const options = {
     ]
 };
 export default options;
-//# sourceMappingURL=option.js.map

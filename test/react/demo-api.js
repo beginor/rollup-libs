@@ -5,4 +5,3 @@ export const messageService = {
     clearMessage: () => subject.next(''),
     onMessage: () => subject.asObservable()
 };
-//# sourceMappingURL=demo-api.js.map

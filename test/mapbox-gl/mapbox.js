@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import mapboxgl from 'mapbox-gl';
 import { buffer } from '@turf/turf';
-import accessToken from './token.js';
+import accessToken from './token';
 let frameHandle = 0;
 void (async function init() {
     const map = new mapboxgl.Map({
@@ -201,4 +201,3 @@ async function addCities(map) {
         }
     });
 }
-//# sourceMappingURL=mapbox.js.map

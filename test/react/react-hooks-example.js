@@ -27,4 +27,3 @@ export function useMessage(subject) {
     });
     return message;
 }
-//# sourceMappingURL=react-hooks-example.js.map

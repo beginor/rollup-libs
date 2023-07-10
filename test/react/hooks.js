@@ -23,4 +23,3 @@ document.getElementById('init')?.addEventListener('click', () => {
 document.getElementById('destroy')?.addEventListener('click', e => {
     unmountComponentAtNode(document.getElementById('app'));
 });
-//# sourceMappingURL=hooks.js.map
