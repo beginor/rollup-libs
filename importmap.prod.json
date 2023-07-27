@@ -9,6 +9,7 @@
     "react-dom/client": "http://localhost:3000/dist/libs/react-bucket/react-dom-client.min.js",
     "react-router-dom": "http://localhost:3000/dist/libs/react-bucket/react-router-dom.min.js",
     "react-bootstrap": "http://localhost:3000/dist/libs/react-bucket/react-bootstrap.min.js",
+    "react-window": "http://localhost:3000/dist/libs/react-bucket/react-window.min.js",
     "antd": "http://localhost:3000/dist/libs/react-bucket/antd.min.js",
     "antd/locale/zh_CN": "http://localhost:3000/dist/libs/react-bucket/antd-locale/zh_CN.js",
     "antd/locale/en_US": "http://localhost:3000/dist/libs/react-bucket/antd-locale/en_US.js",

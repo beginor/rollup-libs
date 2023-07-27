@@ -68,7 +68,9 @@
     "es-module-shims": "^1.8.0",
     "apexcharts": "^3.41.0",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.19.3/xlsx-0.19.3.tgz",
-    "dayjs": "^1.11.9"
+    "dayjs": "^1.11.9",
+    "react-window": "^1.8.9",
+    "@types/react-window": "^1.8.5"
   },
   "devDependencies": {
     "eslint": "^8.45.0",
