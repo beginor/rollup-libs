@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ant Design Mobile</title>
+  <link rel="stylesheet" href="../../dist/libs/antd-mobile/antd-mobile-global.css">
+  <link rel="stylesheet" href="../../dist/libs/antd-mobile/style.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script async src="../../dist/libs/es-module-shims/es-module-shims.js"></script>
+  <script src="../../dist/loader.js"></script>
+  <script>
+  loadScripts([
+    { type: 'importmap', src: `http://192.168.8.8/dist/importmap.${isProd()?'prod.json':'json'}` },
+    { type: 'module', src: `./antd-mobile.js` }
+  ]).catch(ex => console.error(ex));
+  </script>
+</body>
+</html>

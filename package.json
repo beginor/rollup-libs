@@ -18,7 +18,7 @@
     "test": "echo test",
     "esbuild": "NODE_ENV=production node esbuild.mjs",
     "esbuild-watch": "ESBUILD_WATCH=true node esbuild.mjs",
-    "watch-test": "tsc -p tsconfig.test.json"
+    "watch-test": "tsc -p tsconfig.test.json --watch"
   },
   "repository": {
     "type": "git",
@@ -54,6 +54,7 @@
     "react-router-dom": "^6.15.0",
     "react-bootstrap": "^2.8.0",
     "antd": "^5.8.3",
+    "antd-mobile": "^5.32.0",
     "@ant-design/icons-svg": "^4.3.0",
     "mapbox-gl": "^2.15.0",
     "@types/mapbox-gl": "^2.7.13",
