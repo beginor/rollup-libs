@@ -17,7 +17,8 @@
     "start": "pnpm run clean && pnpm run dev",
     "test": "echo test",
     "esbuild": "NODE_ENV=production node esbuild.mjs",
-    "esbuild-watch": "ESBUILD_WATCH=true node esbuild.mjs"
+    "esbuild-watch": "ESBUILD_WATCH=true node esbuild.mjs",
+    "watch-test": "tsc -p tsconfig.test.json"
   },
   "repository": {
     "type": "git",

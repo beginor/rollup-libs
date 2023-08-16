@@ -17,7 +17,8 @@ module.exports = {
   /**  files to watch */
   files: [
     'dist/**/*.(html|js)',
-    'index.html'
+    'index.html',
+    'test/**/*'
   ],
   server: {
     baseDir,
