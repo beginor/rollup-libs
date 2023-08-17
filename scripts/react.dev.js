@@ -24,6 +24,7 @@ export const {
   useDebugValue,
   useEffect,
   useImperativeHandle,
+  useInsertionEffect,
   useLayoutEffect,
   useMemo,
   useReducer,

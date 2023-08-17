@@ -10,6 +10,7 @@
     "react-router-dom": "http://localhost:3000/dist/libs/react-bucket/react-router-dom.js",
     "react-bootstrap": "http://localhost:3000/dist/libs/react-bucket/react-bootstrap.js",
     "react-window": "http://localhost:3000/dist/libs/react-bucket/react-window.js",
+    "framer-motion": "http://localhost:3000/dist/libs/react-bucket/framer-motion.js",
     "antd-mobile": "http://localhost:3000/dist/libs/antd-mobile/antd-mobile.js",
     "antd-mobile/es/global": "http://localhost:3000/dist/libs/antd-mobile/antd-mobile-global.js",
     "antd-mobile/es/locales/en-US": "http://localhost:3000/dist/libs/antd-mobile/locales/en-US.js",

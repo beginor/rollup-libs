@@ -18,6 +18,7 @@ const dev = {
     'react-bootstrap': 'node_modules/react-bootstrap/esm/index.js',
     'antd': './node_modules/antd/es/index.js',
     'react-window': './node_modules/react-window/dist/index.esm.js',
+    'framer-motion': './node_modules/framer-motion/dist/es/index.mjs',
   },
   output: {
     format: 'esm',
@@ -49,6 +50,7 @@ const prod = {
     'react-bootstrap.min': 'node_modules/react-bootstrap/esm/index.js',
     'antd.min': './node_modules/antd/es/index.js',
     'react-window.min': './node_modules/react-window/dist/index.esm.js',
+    'framer-motion.min': './node_modules/framer-motion/dist/es/index.mjs',
   },
   output: {
     format: 'esm',

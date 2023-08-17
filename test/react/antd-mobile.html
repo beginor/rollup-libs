@@ -14,7 +14,7 @@
   <script src="../../dist/loader.js"></script>
   <script>
   loadScripts([
-    { type: 'importmap', src: `http://192.168.8.8/dist/importmap.${isProd()?'prod.json':'json'}` },
+    { type: 'importmap', src: `../../importmap.${isProd()?'prod.json':'json'}` },
     { type: 'module', src: `./antd-mobile.js` }
   ]).catch(ex => console.error(ex));
   </script>
