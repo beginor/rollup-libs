@@ -1,14 +1,25 @@
-import { useRef } from 'react';
-import { render } from 'react-dom';
+import React, { useRef, useEffect } from 'react';
+import { createRoot } from 'react-dom/client';
 
-import chartOption from './option';
+import * as echarts from 'echarts';
+// import 'echarts-gl';
+// import 'echarts-wordcloud';
 
-render(<App />, document.getElementById('root'));
+import chartOption from './option.js';
+
+const root = createRoot(document.getElementById('root')!);
+root.render(<App />);
 
 function App(): JSX.Element {
     const chartRef = useRef<HTMLDivElement>(null);
 
-    // useEchart(chartRef, chartOption);
+    useEffect(() => {
+        if (!chartRef.current) {
+            return;
+        }
+        const instance = echarts.init(chartRef.current);
+        instance.setOption(chartOption);
+    }, []);
 
     return (
         <div style={{ width: '100%', height: '100%' }} ref={chartRef}></div>
