@@ -1,3 +1,8 @@
+await loadStyles([
+  '/dist/libs/@tabler/core/css/tabler.min.css',
+  '/dist/libs/@tabler/core/css/tabler-vendors.min.css',
+]);
+
 const arr = navigator.userAgent.split(' ');
 const result = [];
 
