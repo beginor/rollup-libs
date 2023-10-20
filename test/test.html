@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test View</title>
+  <link rel="stylesheet" href="./test.css">
+</head>
+<body>
+  <div id="test-view" class="test-view"></div>
+  <script src="../dist/loader.js"></script>
+  <script>
+    let demo = getQueryString('demo') || 'test.js';
+    if (!demo.endsWith('.js')) { demo += '.js'; }
+    loadScripts([
+      {
+        type: 'importmap',
+        src: [
+          `../importmap.${isProd()?'prod.json':'json'}`,
+        ]
+      },
+      { type: 'module', src: `./${demo}` }
+    ]).catch(ex => console.error(ex));
+  </script>
+
+</body>
+</html>

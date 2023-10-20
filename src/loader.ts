@@ -77,3 +77,29 @@ interface ImportMap {
         [key: string]: string;
     }
 }
+
+async function loadStyles(styles: string[]): Promise<void> {
+    for (const style of styles) {
+        await loadStyle(style);
+    }
+}
+
+function loadStyle(href: string): Promise<void> {
+    if (document.head.querySelector(`link[href="${href}"]`)) {
+        return Promise.resolve();
+    }
+    return new Promise((resolve, reject) => {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = href;
+        document.head.appendChild(link);
+
+        link.onload = () => resolve();
+        link.onerror = ex => reject(ex);
+    });
+}
+
+interface StyleProps {
+    id: string;
+    href: string;
+}

@@ -1,5 +1,16 @@
+await loadStyles([
+  '/dist/libs/@tabler/core/css/tabler.min.css',
+  '/dist/libs/@tabler/core/css/tabler-vendors.min.css',
+  '/test.css'
+]);
 
-document.getElementById('xport').addEventListener("click", async () => {
+const container = document.getElementById('test-view');
+const btn = document.createElement('button');
+btn.innerText = 'Export XLSX'
+btn.className = 'btn'
+container.appendChild(btn);
+
+btn.addEventListener("click", async () => {
   /* dynamically import the library in the event listener */
   const XLSX = await import("xlsx");
 

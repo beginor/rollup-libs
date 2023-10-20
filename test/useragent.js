@@ -22,7 +22,7 @@ for (let item of arr) {
 }
 
 // Write Javascript code!
-const appDiv = document.getElementById('result');
+const appDiv = document.getElementById('test-view');
 
 appDiv.innerHTML += '<p> ' + navigator.userAgent + ' </p>';
 
