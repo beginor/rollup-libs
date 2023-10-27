@@ -79,9 +79,11 @@ interface ImportMap {
 }
 
 async function loadStyles(styles: string[]): Promise<void> {
+    const tasks = [];
     for (const style of styles) {
-        await loadStyle(style);
+        tasks.push(loadStyle(style));
     }
+    await Promise.all(tasks);
 }
 
 function loadStyle(href: string): Promise<void> {
