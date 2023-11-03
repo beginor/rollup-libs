@@ -1,45 +1,27 @@
 import nodeResolve from '@rollup/plugin-node-resolve';
 import esbuild from 'rollup-plugin-esbuild';
 
-export default [
-  createRollupConfig({
-    input: './node_modules/rxjs/dist/esm/index.js',
-    output: './dist/libs/rxjs/rxjs.js',
-  }),
-  createRollupConfig({
-    input: './node_modules/rxjs/dist/esm/operators/index.js',
-    output: './dist/libs/rxjs/rxjs.operators.js',
-    external: ['rxjs']
-  }),
-  createRollupConfig({
-    input: './node_modules/rxjs/dist/esm/fetch/index.js',
-    output: './dist/libs/rxjs/rxjs.fetch.js',
-    external: ['tslib']
-  }),
-  createRollupConfig({
-    input: './node_modules/rxjs/dist/esm/ajax/index.js',
-    output: './dist/libs/rxjs/rxjs.ajax.js',
-    external: ['tslib']
-  }),
-  createRollupConfig({
-    input: './node_modules/rxjs/dist/esm/webSocket/index.js',
-    output: './dist/libs/rxjs/rxjs.webSocket.js',
-    external: ['tslib']
-  })
-]
+/** @type {import('rollup').RollupOptions} */
+const options = {
+  input: {
+    'rxjs': './node_modules/rxjs/dist/esm/index.js',
+    'rxjs.operators': './node_modules/rxjs/dist/esm/operators/index.js',
+    'rxjs.fetch': './node_modules/rxjs/dist/esm/fetch/index.js',
+    'rxjs.ajax': './node_modules/rxjs/dist/esm/ajax/index.js',
+    'rxjs.webSocket': './node_modules/rxjs/dist/esm/webSocket/index.js'
+  },
+  output: {
+    format: 'esm',
+    exports: 'named',
+    sourcemap: false,
+    dir: 'dist/libs/rxjs',
+    chunkFileNames: '[name]-[hash].js',
+  },
+  external: ['tslib'],
+  plugins: [
+    nodeResolve({ }),
+    esbuild({ minify: false, legalComments: 'none' })
+  ]
+};
 
-function createRollupConfig({ input, output, external = [] }) {
-  return {
-    input: input,
-    output: {
-      file: output,
-      format: 'esm',
-      sourcemap: false // !production
-    },
-    external: external,
-    plugins: [
-      nodeResolve({ }),
-      esbuild({ minify: true, legalComments: 'none' })
-    ]
-  };
-}
+export default options;
