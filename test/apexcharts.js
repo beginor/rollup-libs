@@ -33,5 +33,5 @@ plotOptions: {
 labels: ['Apples', 'Oranges', 'Bananas', 'Berries'],
 };
 
-var chart = new ApexCharts(document.querySelector("#chart"), options);
+var chart = new ApexCharts(document.getElementById('test-view'), options);
 chart.render();

@@ -1,14 +1,22 @@
-import Map from '@arcgis/core/Map';
-import MapView from '@arcgis/core/views/MapView';
+import Map from 'https://js.arcgis.com/4.28/@arcgis/core/Map.js';
+import MapView from 'https://js.arcgis.com/4.28/@arcgis/core/views/SceneView.js';
+
+const baseUrl = 'https://js.arcgis.com/4.28/';
+
+await loadStyle(`${baseUrl}@arcgis/core/assets/esri/css/main.css`);
+
 const esriConfig = {
-    assetsPath: '/node_modules/@arcgis/core/assets/esri',
+    assetsPath: `${baseUrl}@arcgis/core/assets/esri`,
     locale: 'zh-cn'
 };
 const global = Object.assign(window, { esriConfig });
 const map = new Map({
-    basemap: 'streets',
+  basemap: "navigation-3d",
+  ground: "world-elevation"
 });
 const mapview = new MapView({
-    container: 'viewDiv',
-    map
+    container: 'test-view',
+    map,
+    center: [112.3, 23.4],
+    zoom: 7
 });
