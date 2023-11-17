@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mapbox Test</title>
-  <link rel="stylesheet" href="../../assets/libraries/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="../../assets/libraries/mapbox-gl/mapbox-gl.css">
+  <link rel="stylesheet" href="../../dist/libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../dist/libs/mapbox-gl/mapbox-gl.css">
   <style>
     html, body { width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;}
     #viewDiv { width: 100%; height: 100%; }
@@ -19,7 +19,7 @@
   <button id="test" type="button" class="m-1 btn btn-sm btn-outline-info">Test</button>
   <button id="freeCamera" type="button" class="m-1 btn btn-sm btn-outline-info">Free Camera</button>
 </div>
-<script src="../../index.js"></script>
+<script src="../../dist/loader.js"></script>
 <script>
   loadScripts([
     { type: 'importmap', src: `../../importmap.${isProd()?'prod.json':'json'}` },
