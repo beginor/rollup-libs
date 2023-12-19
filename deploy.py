@@ -8,6 +8,7 @@ targets = {
     'agsdb01:/mnt/data/docker/nginx/it/html/arcgis-js-api/dist': 'https://it.gdeei.cn/arcgis-js-api/dist',
     'agsdb01:/mnt/data/docker/nginx/app/html/arcgis-js-api/dist': 'https://app.gdeei.cn/arcgis-js-api/dist',
     # '~/Developer/python/geep/client/dist': 'http://172.32.32.206/geep/web/dist',
+    '~/Developer/work/hky/shenzhen-client/dist': '/shenzhen/dist',
 }
 
 
